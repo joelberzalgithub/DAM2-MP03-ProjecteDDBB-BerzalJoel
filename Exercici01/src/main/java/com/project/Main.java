@@ -7,128 +7,51 @@ public class Main {
         // Create tables
         createTables();
 
-        // Add accounts
-        addAccount("Emily Johnson", "john", "ABC", "1991-02-01");
-        addAccount("Michael Thompson", "thom", "DEF", "1991-02-01");
-        addAccount("Sarah Davis", "sd", "GHI", "1991-02-01");
-        addAccount("John Carmack", "jck", "JKL", "1991-02-01");
-        addAccount("Jason Jones", "jj", "MNÑ", "1991-05-11");
-        addAccount("Gabe Newell", "gaben", "OPQ", "1996-08-24");
-        addAccount("Jeff Rosen", "jrsn", "RST", "2013-04-24");
-        addAccount("David Szymanski", "dave", "UVW", "2018-01-10");
-        addAccount("Spytihněv", "spy", "XYZ", "2020-06-16");
+        // Add people
+        addPeople(1, "John Doe", "john@example.com", "12345678A", 30, "1994-05-15", 123456789);
+        addPeople(2, "Jane Smith", "jane@example.com", "87654321B", 25, "1999-11-20", 987654321);
+        addPeople(3, "Michael Johnson", "michael@example.com", "56789012C", 40, "1984-07-10", 456789012);
+        addPeople(4, "Emily Brown", "emily@example.com", "34567890D", 35, "1989-03-25", 234567890);
+        addPeople(5, "David Lee", "david@example.com", "90123456E", 28, "1996-09-05", 345678901);
+        addPeople(6, "Sarah Garcia", "sarah@example.com", "23456789F", 33, "1991-12-30", 567890123);
+        addPeople(7, "Alex Martinez", "alex@example.com", "78901234G", 31, "1993-02-18", 678901234);
+        addPeople(8, "Jessica Taylor", "jessica@example.com", "45678901H", 29, "1995-08-08", 789012345);
+        addPeople(9, "Daniel Lopez", "daniel@example.com", "89012345I", 36, "1988-06-12", 890123456);
 
-        // Add developers
-        addDevelopers(4, "Id Software", false);
-        addDevelopers(5, "Bungie Studios", false);
-        addDevelopers(6, "Valve", false);
-        addDevelopers(7, "Humble Games", true);
-        addDevelopers(8, "New Blood Interactive", true);
-        addDevelopers(9, "Spytihněv", true);
+        // Add customers
+        addCustomer(1, 1, "base", "Action, Comedy", "2023-04-15", "2023-10-15");
+        addCustomer(2, 2, "premium", "Drama, Romance", "2022-09-20", "2023-09-20");
+        addCustomer(3, 3, "base", "Thriller, Horror", "2024-01-10", "2024-07-10");
 
-        // Add videogames
-        addGame(4, "Wolfenstein 3D", 4.99, 8.0, "1991-08-04");
-        addGame(4, "Doom", 4.99, 10.0, "1993-06-06");
-        addGame(4, "Quake", 9.99, 9.0, "2007-09-17");
-        addGame(5, "Marathon", 13.99, 7.5, "1994-12-21");
-        addGame(5, "Halo: Combat Evolved", 9.99, 10.0, "2019-12-03");
-        addGame(5, "Destiny", 0.0, 8.5, "2019-09-01");
-        addGame(6, "Half-Life", 4.99, 10.0, "1998-11-08");
-        addGame(6, "Team Fortress", 4.99, 9.5, "1999-04-01");
-        addGame(6, "Portal", 4.99, 10.0, "2007-10-10");
-        addGame(7, "Into The Pit", 14.99, 5.0, "2021-10-19");
-        addGame(7, "Prodeus", 24.99, 7.5, "2022-09-23");
-        addGame(7, "Signalis", 4.99, 9.5, "2022-10-27");
-        addGame(8, "Dusk", 19.50, 9.0, "2018-12-10");
-        addGame(8, "Amid Evil", 19.50, 8.0, "2019-07-20");
-        addGame(8, "Ultrakill", 24.50, 10.0, "2020-09-03");
-        addGame(9, "Legie", 3.99, 7.5, "2007-09-03");
-        addGame(9, "Tragedy of Prince Rupert", 1.99, 6.5, "2017-07-26");
-        addGame(9, "HROT", 19.50, 8.5, "2023-05-16");
+        // Add employees
+        addEmployee(1, 4, "2023-05-10", "Software Engineer", 60000.00, 40, 20);
+        addEmployee(2, 5, "2022-09-15", "Marketing Manager", 70000.00, 45, 25);
+        addEmployee(3, 6, "2024-01-20", "Human Resources Assistant", 45000.00, 35, 15);
 
-        // List accounts
-        System.out.println("\nAccounts:");
-        listAccounts();
+        // Add videoclubs
+        addVideoclub(1, 7, "CineMania", "info@cinemania.com", 987654321, 10.00, 23.00);
+        addVideoclub(2, 8, "Flicks & Chill", "contact@flicksandchill.com", 123456789, 12.00, 22.00);
+        addVideoclub(3, 9, "Silver Screens", "silver.screens@email.com", 555666777, 11.00, 21.30);
 
-        // List developers
-        System.out.println("\nDevelopers:");
-        listDevelopers();
+        // List people
+        System.out.println("\nPeople:");
+        listPeople();
 
-        // List videogames
-        System.out.println("\nVideogames:");
-        listGames();
+        // List customers
+        System.out.println("\nCustomers:");
+        listCustomers();
 
-        // Delete some accounts
-        System.out.println("\nDeleting some accounts...");
-        deleteAccount(1);
-        deleteAccount(2);
-        deleteAccount(3);
-        System.out.println("\nAccounts deleted!");
+        // List employees
+        System.out.println("\nEmployees:");
+        listEmployees();
 
-        // Delete some developers
-        System.out.println("\nDeleting some developers...");
-        deleteDeveloper(2);
-        deleteDeveloper(4);
-        deleteDeveloper(6);
-        System.out.println("\nDevelopers deleted!");
+        // List owners
+        System.out.println("\nOwners:");
+        listOwners();
 
-        // Delete some videogames
-        System.out.println("\nDeleting some videogames...");
-        deleteGame(4);
-        deleteGame(5);
-        deleteGame(6);
-        deleteGame(10);
-        deleteGame(11);
-        deleteGame(12);
-        deleteGame(16);
-        deleteGame(17);
-        deleteGame(18);
-        System.out.println("\nVideogames deleted!");
-
-        // List accounts again to check if the changes were successfull
-        System.out.println("\nCurrent accounts:");
-        listAccounts();
-
-        // List developers again to check if the changes were successfull
-        System.out.println("\nCurrent developers:");
-        listDevelopers();
-
-        // List videogames again to check if the changes were successfull
-        System.out.println("\nCurrent videogames:");
-        listGames();
-
-        // Update some accounts
-        System.out.println("\nUpdating some accounts...");
-        updateAccount(4, "Alice Johnson", "alice123", "A1b2C3", "1988-09-15");
-        updateAccount(6, "Gabe Newell", "gaben", "ValveRocks", "1972-11-03");
-        updateAccount(8, "David Szymanski", "davidszy", "D4v1d!23", "1985-06-20");
-        System.out.println("\nAccounts updated!");
-
-        // Update some developers
-        System.out.println("\nUpdating some developers...");
-        updateDeveloper(1, 4, "Bungie Studios", true);
-        updateDeveloper(3, 6, "Humble Games", true);
-        updateDeveloper(5, 8, "Spytihněv", false);
-        System.out.println("\nDevelopers updated!");
-
-        // Update some videogames
-        System.out.println("\nUpdating some videogames...");
-        updateGame(1, 1, "Half-Life", 4.99, 10.0, "1998-11-08");
-        updateGame(7, 3, "Prodeus", 24.99, 7.5, "2022-09-23");
-        updateGame(13, 5, "HROT", 19.50, 8.5, "2023-05-16");
-        System.out.println("\nVideogames updated!");
-
-        // List accounts again to check if the changes were successfull
-        System.out.println("\nCurrent accounts:");
-        listAccounts();
-
-        // List developers again to check if the changes were successfull
-        System.out.println("\nCurrent developers:");
-        listDevelopers();
-
-        // List videogames again to check if the changes were successfull
-        System.out.println("\nCurrent videogames:");
-        listGames();
+        // List videoclubs
+        System.out.println("\nVideoclubs:");
+        listVideoclubs();
 
         // Close the database connection
         db.close();
