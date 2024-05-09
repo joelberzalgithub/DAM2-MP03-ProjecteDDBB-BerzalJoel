@@ -20,7 +20,7 @@ account_creation (DATE): data de creació del compte
 id (INTEGER): identificador únic
 id_account (INTEGER): identificador de compte
 company (TEXT): companyia per la que treballa
-isIndie (BOOLEAN): és un desenvolupador independent
+is_indie (BOOLEAN): és un desenvolupador independent
 ```
 
 **Taula games:**
@@ -52,15 +52,15 @@ void addDeveloper(int accountId, String company, boolean isIndie)
 void addGame(int developerId, String title, double price, double reviewScore, String release)
 
 // Llista els comptes amb format:
-// ID: 1, Name: The Gourmet Kitchen, Kind: Italian, Tables: 10, Pricing: High
+// ID: 1, Name: Emily Johnson, Nickname: john, Password: ABC, Account Creation: 1991-02-01
 void listAccounts()
 
 // Llista els desenvolupadors amb format:
-// ID: 1, Name: The Gourmet Kitchen, Kind: Italian, Tables: 10, Pricing: High
+// ID: 1, Name: John Carmack, Nickname: jck, Password: JKL, Account Creation: 1991-02-01, Company: Id Software, Is Indie? No
 void listDevelopers()
 
 // Llita els videojocs amb format:
-// ID: 1, Name: The Gourmet Kitchen, Kind: Italian, Tables: 10, Pricing: High
+// ID: 1, Title: Wolfenstein 3D, Price: 4.99, Review Score: 8.0, Release Date: null, Developer Name: Jeff Rosen, Developer Company: Humble Games
 void listGames()
 
 // Actualitza les dades d´un compte

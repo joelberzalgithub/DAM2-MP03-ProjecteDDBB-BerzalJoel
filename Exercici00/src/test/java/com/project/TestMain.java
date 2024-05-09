@@ -47,24 +47,24 @@ public class TestMain {
             ID: 6, Name: Spytihněv, Nickname: spy, Password: XYZ, Account Creation: 2020-06-16, Company: Spytihněv, Is Indie? Yes
             
             Videogames:
-            ID: 1, Wolfenstein 3D, Price: 4.99, Review Score: 8.0, Release Date: 1991-08-04, Developer Name: John Carmack, Developer Company: Id Software
-            ID: 2, Doom, Price: 4.99, Review Score: 10.0, Release Date: 1993-06-06, Developer Name: John Carmack, Developer Company: Id Software
-            ID: 3, Quake, Price: 9.99, Review Score: 9.0, Release Date: 2007-09-17, Developer Name: John Carmack, Developer Company: Id Software
-            ID: 4, Marathon, Price: 13.99, Review Score: 7.5, Release Date: 1994-12-21, Developer Name: Jason Jones, Developer Company: Bungie Studios
-            ID: 5, Halo: Combat Evolved, Price: 9.99, Review Score: 10.0, Release Date: 2019-12-03, Developer Name: Jason Jones, Developer Company: Bungie Studios
-            ID: 6, Destiny, Price: 0.0, Review Score: 8.5, Release Date: 2019-09-01, Developer Name: Jason Jones, Developer Company: Bungie Studios
-            ID: 7, Half-Life, Price: 4.99, Review Score: 10.0, Release Date: 1998-11-08, Developer Name: Gabe Newell, Developer Company: Valve
-            ID: 8, Team Fortress, Price: 4.99, Review Score: 9.5, Release Date: 1999-04-01, Developer Name: Gabe Newell, Developer Company: Valve
-            ID: 9, Portal, Price: 4.99, Review Score: 10.0, Release Date: 2007-10-10, Developer Name: Gabe Newell, Developer Company: Valve
-            ID: 10, Into The Pit, Price: 14.99, Review Score: 5.0, Release Date: 2021-10-19, Developer Name: Jeff Rosen, Developer Company: Humble Games
-            ID: 11, Prodeus, Price: 24.99, Review Score: 7.5, Release Date: 2022-09-23, Developer Name: Jeff Rosen, Developer Company: Humble Games
-            ID: 12, Signalis, Price: 4.99, Review Score: 9.5, Release Date: 2022-10-27, Developer Name: Jeff Rosen, Developer Company: Humble Games
-            ID: 13, Dusk, Price: 19.50, Review Score: 9.0, Release Date: 2018-12-10, Developer Name: David Szymanski, Developer Company: New Blood Interactive
-            ID: 14, Amid Evil, Price: 19.50, Review Score: 8.0, Release Date: 2019-07-20, Developer Name: David Szymanski, Developer Company: New Blood Interactive
-            ID: 15, Ultrakill, Price: 24.50, Review Score: 10.0, Release Date: 2020-09-03, Developer Name: David Szymanski, Developer Company: New Blood Interactive
-            ID: 16, Legie, Price: 3.99, Review Score: 7.5, Release Date: 2007-09-03, Developer Name: Spytihněv, Developer Company: Spytihněv
-            ID: 17, Tragedy of Prince Rupert, Price: 1.99, Review Score: 6.5, Release Date: 2017-07-26, Developer Name: Spytihněv, Developer Company: Spytihněv
-            ID: 18, HROT, Price: 19.50, Review Score: 8.5, Release Date: 2023-05-16, Developer Name: Spytihněv, Developer Company: Spytihněv
+            ID: 1, Title: Wolfenstein 3D, Price: 4.99, Review Score: 8.0, Release Date: 1991-08-04, Developer Name: John Carmack, Developer Company: Id Software
+            ID: 2, Title: Doom, Price: 4.99, Review Score: 10.0, Release Date: 1993-06-06, Developer Name: John Carmack, Developer Company: Id Software
+            ID: 3, Title: Quake, Price: 9.99, Review Score: 9.0, Release Date: 2007-09-17, Developer Name: John Carmack, Developer Company: Id Software
+            ID: 4, Title: Marathon, Price: 13.99, Review Score: 7.5, Release Date: 1994-12-21, Developer Name: Jason Jones, Developer Company: Bungie Studios
+            ID: 5, Title: Halo: Combat Evolved, Price: 9.99, Review Score: 10.0, Release Date: 2019-12-03, Developer Name: Jason Jones, Developer Company: Bungie Studios
+            ID: 6, Title: Destiny, Price: 0.0, Review Score: 8.5, Release Date: 2019-09-01, Developer Name: Jason Jones, Developer Company: Bungie Studios
+            ID: 7, Title: Half-Life, Price: 4.99, Review Score: 10.0, Release Date: 1998-11-08, Developer Name: Gabe Newell, Developer Company: Valve
+            ID: 8, Title: Team Fortress, Price: 4.99, Review Score: 9.5, Release Date: 1999-04-01, Developer Name: Gabe Newell, Developer Company: Valve
+            ID: 9, Title: Portal, Price: 4.99, Review Score: 10.0, Release Date: 2007-10-10, Developer Name: Gabe Newell, Developer Company: Valve
+            ID: 10, Title: Into The Pit, Price: 14.99, Review Score: 5.0, Release Date: 2021-10-19, Developer Name: Jeff Rosen, Developer Company: Humble Games
+            ID: 11, Title: Prodeus, Price: 24.99, Review Score: 7.5, Release Date: 2022-09-23, Developer Name: Jeff Rosen, Developer Company: Humble Games
+            ID: 12, Title: Signalis, Price: 4.99, Review Score: 9.5, Release Date: 2022-10-27, Developer Name: Jeff Rosen, Developer Company: Humble Games
+            ID: 13, Title: Dusk, Price: 19.50, Review Score: 9.0, Release Date: 2018-12-10, Developer Name: David Szymanski, Developer Company: New Blood Interactive
+            ID: 14, Title: Amid Evil, Price: 19.50, Review Score: 8.0, Release Date: 2019-07-20, Developer Name: David Szymanski, Developer Company: New Blood Interactive
+            ID: 15, Title: Ultrakill, Price: 24.50, Review Score: 10.0, Release Date: 2020-09-03, Developer Name: David Szymanski, Developer Company: New Blood Interactive
+            ID: 16, Title: Legie, Price: 3.99, Review Score: 7.5, Release Date: 2007-09-03, Developer Name: Spytihněv, Developer Company: Spytihněv
+            ID: 17, Title: Tragedy of Prince Rupert, Price: 1.99, Review Score: 6.5, Release Date: 2017-07-26, Developer Name: Spytihněv, Developer Company: Spytihněv
+            ID: 18, Title: HROT, Price: 19.50, Review Score: 8.5, Release Date: 2023-05-16, Developer Name: Spytihněv, Developer Company: Spytihněv
             
             Deleting some accounts...
 
@@ -92,15 +92,15 @@ public class TestMain {
             ID: 5, Name: David Szymanski, Nickname: dave, Password: UVW, Account Creation: 2018-01-10, Company: New Blood Interactive, Is Indie? Yes
             
             Current videogames:
-            ID: 1, Wolfenstein 3D, Price: 4.99, Review Score: 8.0, Release Date: 1991-08-04, Developer Name: John Carmack, Developer Company: Id Software
-            ID: 2, Doom, Price: 4.99, Review Score: 10.0, Release Date: 1993-06-06, Developer Name: John Carmack, Developer Company: Id Software
-            ID: 3, Quake, Price: 9.99, Review Score: 9.0, Release Date: 2007-09-17, Developer Name: John Carmack, Developer Company: Id Software
-            ID: 7, Half-Life, Price: 4.99, Review Score: 10.0, Release Date: 1998-11-08, Developer Name: Gabe Newell, Developer Company: Valve
-            ID: 8, Team Fortress, Price: 4.99, Review Score: 9.5, Release Date: 1999-04-01, Developer Name: Gabe Newell, Developer Company: Valve
-            ID: 9, Portal, Price: 4.99, Review Score: 10.0, Release Date: 2007-10-10, Developer Name: Gabe Newell, Developer Company: Valve
-            ID: 13, Dusk, Price: 19.50, Review Score: 9.0, Release Date: 2018-12-10, Developer Name: David Szymanski, Developer Company: New Blood Interactive
-            ID: 14, Amid Evil, Price: 19.50, Review Score: 8.0, Release Date: 2019-07-20, Developer Name: David Szymanski, Developer Company: New Blood Interactive
-            ID: 15, Ultrakill, Price: 24.50, Review Score: 10.0, Release Date: 2020-09-03, Developer Name: David Szymanski, Developer Company: New Blood Interactive
+            ID: 1, Title: Wolfenstein 3D, Price: 4.99, Review Score: 8.0, Release Date: 1991-08-04, Developer Name: John Carmack, Developer Company: Id Software
+            ID: 2, Title: Doom, Price: 4.99, Review Score: 10.0, Release Date: 1993-06-06, Developer Name: John Carmack, Developer Company: Id Software
+            ID: 3, Title: Quake, Price: 9.99, Review Score: 9.0, Release Date: 2007-09-17, Developer Name: John Carmack, Developer Company: Id Software
+            ID: 7, Title: Half-Life, Price: 4.99, Review Score: 10.0, Release Date: 1998-11-08, Developer Name: Gabe Newell, Developer Company: Valve
+            ID: 8, Title: Team Fortress, Price: 4.99, Review Score: 9.5, Release Date: 1999-04-01, Developer Name: Gabe Newell, Developer Company: Valve
+            ID: 9, Title: Portal, Price: 4.99, Review Score: 10.0, Release Date: 2007-10-10, Developer Name: Gabe Newell, Developer Company: Valve
+            ID: 13, Title: Dusk, Price: 19.50, Review Score: 9.0, Release Date: 2018-12-10, Developer Name: David Szymanski, Developer Company: New Blood Interactive
+            ID: 14, Title: Amid Evil, Price: 19.50, Review Score: 8.0, Release Date: 2019-07-20, Developer Name: David Szymanski, Developer Company: New Blood Interactive
+            ID: 15, Title: Ultrakill, Price: 24.50, Review Score: 10.0, Release Date: 2020-09-03, Developer Name: David Szymanski, Developer Company: New Blood Interactive
 
             Updating some accounts...
 
@@ -128,15 +128,15 @@ public class TestMain {
             ID: 5, Name: David Szymanski, Nickname: davidszy, Password: D4v1d!23, Account Creation: 1985-06-20, Company: Spytihněv, Is Indie? No
             
             Current videogames:
-            ID: 1, Half-Life, Price: 4.99, Review Score: 10.0, Release Date: 1998-11-08, Developer Name: Alice Johnson, Developer Company: Bungie Studios
-            ID: 2, Doom, Price: 4.99, Review Score: 10.0, Release Date: 1993-06-06, Developer Name: Alice Johnson, Developer Company: Bungie Studios
-            ID: 3, Quake, Price: 9.99, Review Score: 9.0, Release Date: 2007-09-17, Developer Name: Alice Johnson, Developer Company: Bungie Studios
-            ID: 7, Prodeus, Price: 24.99, Review Score: 7.5, Release Date: 2022-09-23, Developer Name: Gabe Newell, Developer Company: Humble Games
-            ID: 8, Team Fortress, Price: 4.99, Review Score: 9.5, Release Date: 1999-04-01, Developer Name: Gabe Newell, Developer Company: Humble Games
-            ID: 9, Portal, Price: 4.99, Review Score: 10.0, Release Date: 2007-10-10, Developer Name: Gabe Newell, Developer Company: Humble Games
-            ID: 13, HROT, Price: 19.50, Review Score: 8.5, Release Date: 2023-05-16, Developer Name: David Szymanski, Developer Company: Spytihněv
-            ID: 14, Amid Evil, Price: 19.50, Review Score: 8.0, Release Date: 2019-07-20, Developer Name: David Szymanski, Developer Company: Spytihněv
-            ID: 15, Ultrakill, Price: 24.50, Review Score: 10.0, Release Date: 2020-09-03, Developer Name: David Szymanski, Developer Company: Spytihněv
+            ID: 1, Title: Half-Life, Price: 4.99, Review Score: 10.0, Release Date: 1998-11-08, Developer Name: Alice Johnson, Developer Company: Bungie Studios
+            ID: 2, Title: Doom, Price: 4.99, Review Score: 10.0, Release Date: 1993-06-06, Developer Name: Alice Johnson, Developer Company: Bungie Studios
+            ID: 3, Title: Quake, Price: 9.99, Review Score: 9.0, Release Date: 2007-09-17, Developer Name: Alice Johnson, Developer Company: Bungie Studios
+            ID: 7, Title: Prodeus, Price: 24.99, Review Score: 7.5, Release Date: 2022-09-23, Developer Name: Gabe Newell, Developer Company: Humble Games
+            ID: 8, Title: Team Fortress, Price: 4.99, Review Score: 9.5, Release Date: 1999-04-01, Developer Name: Gabe Newell, Developer Company: Humble Games
+            ID: 9, Title: Portal, Price: 4.99, Review Score: 10.0, Release Date: 2007-10-10, Developer Name: Gabe Newell, Developer Company: Humble Games
+            ID: 13, Title: HROT, Price: 19.50, Review Score: 8.5, Release Date: 2023-05-16, Developer Name: David Szymanski, Developer Company: Spytihněv
+            ID: 14, Title: Amid Evil, Price: 19.50, Review Score: 8.0, Release Date: 2019-07-20, Developer Name: David Szymanski, Developer Company: Spytihněv
+            ID: 15, Title: Ultrakill, Price: 24.50, Review Score: 10.0, Release Date: 2020-09-03, Developer Name: David Szymanski, Developer Company: Spytihněv
             """.replace("\r\n", "\n").replace("            ","");
             String diff = TestStringUtils.findFirstDifference(text, expectedOutput);
             assertTrue(diff.compareTo("identical") == 0, 
@@ -209,12 +209,12 @@ public class TestMain {
         assertMethod(clazz, "listAccounts", true, false, "The listAccounts method should be defined correctly.");
         assertMethod(clazz, "listDevelopers", true, false, "The listDevelopers method should be defined correctly.");
         assertMethod(clazz, "listGames", true, false, "The listGames method should be defined correctly.");
-        assertMethod(clazz, "deleteAccounts", true, false, "The deleteAccounts method should be defined correctly.", int.class, String.class, String.class, String.class, String.class);
-        assertMethod(clazz, "deleteDevelopers", true, false, "The deleteDevelopers method should be defined correctly.", int.class, int.class, String.class, boolean.class);
-        assertMethod(clazz, "deleteGames", true, false, "The deleteGames method should be defined correctly.", int.class, int.class, String.class, double.class, double.class, String.class);
-        assertMethod(clazz, "updateAccounts", true, false, "The updateAccounts method should be defined correctly.", int.class);
-        assertMethod(clazz, "updateDevelopers", true, false, "The updateDevelopers method should be defined correctly.", int.class);
-        assertMethod(clazz, "updateGames", true, false, "The updateGames method should be defined correctly.", int.class);
+        assertMethod(clazz, "deleteAccount", true, false, "The deleteAccounts method should be defined correctly.", int.class, String.class, String.class, String.class, String.class);
+        assertMethod(clazz, "deleteDeveloper", true, false, "The deleteDeveloper method should be defined correctly.", int.class, int.class, String.class, boolean.class);
+        assertMethod(clazz, "deleteGame", true, false, "The deleteGame method should be defined correctly.", int.class, int.class, String.class, double.class, double.class, String.class);
+        assertMethod(clazz, "updateAccount", true, false, "The updateAccount method should be defined correctly.", int.class);
+        assertMethod(clazz, "updateDeveloper", true, false, "The updateDeveloper method should be defined correctly.", int.class);
+        assertMethod(clazz, "updateGame", true, false, "The updateGame method should be defined correctly.", int.class);
     }
 
     private void assertMethod(Class<?> clazz, String methodName, boolean shouldBeStatic, boolean shouldBePrivate, String message, Class<?>... parameterTypes) throws NoSuchMethodException {
@@ -234,7 +234,7 @@ public class TestMain {
     public void testMainExtra() throws Exception {
         String text = SystemLambda.tapSystemOut(() -> {
             AppData db = AppData.getInstance();
-
+            
             // Create tables
             createTables();
 
@@ -360,7 +360,7 @@ public class TestMain {
             // List videogames again to check if the changes were successfull
             System.out.println("\nCurrent videogames:");
             listGames();
-
+            
             // Close the database connection
             db.close();
         });
@@ -389,24 +389,24 @@ public class TestMain {
             ID: 6, Name: Spytihněv, Nickname: spy, Password: XYZ, Account Creation: 2020-06-16, Company: Spytihněv, Is Indie? Yes
             
             Videogames:
-            ID: 1, Wolfenstein 3D, Price: 4.99, Review Score: 8.0, Release Date: 1991-08-04, Developer Name: John Carmack, Developer Company: Id Software
-            ID: 2, Doom, Price: 4.99, Review Score: 10.0, Release Date: 1993-06-06, Developer Name: John Carmack, Developer Company: Id Software
-            ID: 3, Quake, Price: 9.99, Review Score: 9.0, Release Date: 2007-09-17, Developer Name: John Carmack, Developer Company: Id Software
-            ID: 4, Marathon, Price: 13.99, Review Score: 7.5, Release Date: 1994-12-21, Developer Name: Jason Jones, Developer Company: Bungie Studios
-            ID: 5, Halo: Combat Evolved, Price: 9.99, Review Score: 10.0, Release Date: 2019-12-03, Developer Name: Jason Jones, Developer Company: Bungie Studios
-            ID: 6, Destiny, Price: 0.0, Review Score: 8.5, Release Date: 2019-09-01, Developer Name: Jason Jones, Developer Company: Bungie Studios
-            ID: 7, Half-Life, Price: 4.99, Review Score: 10.0, Release Date: 1998-11-08, Developer Name: Gabe Newell, Developer Company: Valve
-            ID: 8, Team Fortress, Price: 4.99, Review Score: 9.5, Release Date: 1999-04-01, Developer Name: Gabe Newell, Developer Company: Valve
-            ID: 9, Portal, Price: 4.99, Review Score: 10.0, Release Date: 2007-10-10, Developer Name: Gabe Newell, Developer Company: Valve
-            ID: 10, Into The Pit, Price: 14.99, Review Score: 5.0, Release Date: 2021-10-19, Developer Name: Jeff Rosen, Developer Company: Humble Games
-            ID: 11, Prodeus, Price: 24.99, Review Score: 7.5, Release Date: 2022-09-23, Developer Name: Jeff Rosen, Developer Company: Humble Games
-            ID: 12, Signalis, Price: 4.99, Review Score: 9.5, Release Date: 2022-10-27, Developer Name: Jeff Rosen, Developer Company: Humble Games
-            ID: 13, Dusk, Price: 19.50, Review Score: 9.0, Release Date: 2018-12-10, Developer Name: David Szymanski, Developer Company: New Blood Interactive
-            ID: 14, Amid Evil, Price: 19.50, Review Score: 8.0, Release Date: 2019-07-20, Developer Name: David Szymanski, Developer Company: New Blood Interactive
-            ID: 15, Ultrakill, Price: 24.50, Review Score: 10.0, Release Date: 2020-09-03, Developer Name: David Szymanski, Developer Company: New Blood Interactive
-            ID: 16, Legie, Price: 3.99, Review Score: 7.5, Release Date: 2007-09-03, Developer Name: Spytihněv, Developer Company: Spytihněv
-            ID: 17, Tragedy of Prince Rupert, Price: 1.99, Review Score: 6.5, Release Date: 2017-07-26, Developer Name: Spytihněv, Developer Company: Spytihněv
-            ID: 18, HROT, Price: 19.50, Review Score: 8.5, Release Date: 2023-05-16, Developer Name: Spytihněv, Developer Company: Spytihněv
+            ID: 1, Title: Wolfenstein 3D, Price: 4.99, Review Score: 8.0, Release Date: 1991-08-04, Developer Name: John Carmack, Developer Company: Id Software
+            ID: 2, Title: Doom, Price: 4.99, Review Score: 10.0, Release Date: 1993-06-06, Developer Name: John Carmack, Developer Company: Id Software
+            ID: 3, Title: Quake, Price: 9.99, Review Score: 9.0, Release Date: 2007-09-17, Developer Name: John Carmack, Developer Company: Id Software
+            ID: 4, Title: Marathon, Price: 13.99, Review Score: 7.5, Release Date: 1994-12-21, Developer Name: Jason Jones, Developer Company: Bungie Studios
+            ID: 5, Title: Halo: Combat Evolved, Price: 9.99, Review Score: 10.0, Release Date: 2019-12-03, Developer Name: Jason Jones, Developer Company: Bungie Studios
+            ID: 6, Title: Destiny, Price: 0.0, Review Score: 8.5, Release Date: 2019-09-01, Developer Name: Jason Jones, Developer Company: Bungie Studios
+            ID: 7, Title: Half-Life, Price: 4.99, Review Score: 10.0, Release Date: 1998-11-08, Developer Name: Gabe Newell, Developer Company: Valve
+            ID: 8, Title: Team Fortress, Price: 4.99, Review Score: 9.5, Release Date: 1999-04-01, Developer Name: Gabe Newell, Developer Company: Valve
+            ID: 9, Title: Portal, Price: 4.99, Review Score: 10.0, Release Date: 2007-10-10, Developer Name: Gabe Newell, Developer Company: Valve
+            ID: 10, Title: Into The Pit, Price: 14.99, Review Score: 5.0, Release Date: 2021-10-19, Developer Name: Jeff Rosen, Developer Company: Humble Games
+            ID: 11, Title: Prodeus, Price: 24.99, Review Score: 7.5, Release Date: 2022-09-23, Developer Name: Jeff Rosen, Developer Company: Humble Games
+            ID: 12, Title: Signalis, Price: 4.99, Review Score: 9.5, Release Date: 2022-10-27, Developer Name: Jeff Rosen, Developer Company: Humble Games
+            ID: 13, Title: Dusk, Price: 19.50, Review Score: 9.0, Release Date: 2018-12-10, Developer Name: David Szymanski, Developer Company: New Blood Interactive
+            ID: 14, Title: Amid Evil, Price: 19.50, Review Score: 8.0, Release Date: 2019-07-20, Developer Name: David Szymanski, Developer Company: New Blood Interactive
+            ID: 15, Title: Ultrakill, Price: 24.50, Review Score: 10.0, Release Date: 2020-09-03, Developer Name: David Szymanski, Developer Company: New Blood Interactive
+            ID: 16, Title: Legie, Price: 3.99, Review Score: 7.5, Release Date: 2007-09-03, Developer Name: Spytihněv, Developer Company: Spytihněv
+            ID: 17, Title: Tragedy of Prince Rupert, Price: 1.99, Review Score: 6.5, Release Date: 2017-07-26, Developer Name: Spytihněv, Developer Company: Spytihněv
+            ID: 18, Title: HROT, Price: 19.50, Review Score: 8.5, Release Date: 2023-05-16, Developer Name: Spytihněv, Developer Company: Spytihněv
             
             Deleting some accounts...
 
@@ -434,15 +434,15 @@ public class TestMain {
             ID: 5, Name: David Szymanski, Nickname: dave, Password: UVW, Account Creation: 2018-01-10, Company: New Blood Interactive, Is Indie? Yes
             
             Current videogames:
-            ID: 1, Wolfenstein 3D, Price: 4.99, Review Score: 8.0, Release Date: 1991-08-04, Developer Name: John Carmack, Developer Company: Id Software
-            ID: 2, Doom, Price: 4.99, Review Score: 10.0, Release Date: 1993-06-06, Developer Name: John Carmack, Developer Company: Id Software
-            ID: 3, Quake, Price: 9.99, Review Score: 9.0, Release Date: 2007-09-17, Developer Name: John Carmack, Developer Company: Id Software
-            ID: 7, Half-Life, Price: 4.99, Review Score: 10.0, Release Date: 1998-11-08, Developer Name: Gabe Newell, Developer Company: Valve
-            ID: 8, Team Fortress, Price: 4.99, Review Score: 9.5, Release Date: 1999-04-01, Developer Name: Gabe Newell, Developer Company: Valve
-            ID: 9, Portal, Price: 4.99, Review Score: 10.0, Release Date: 2007-10-10, Developer Name: Gabe Newell, Developer Company: Valve
-            ID: 13, Dusk, Price: 19.50, Review Score: 9.0, Release Date: 2018-12-10, Developer Name: David Szymanski, Developer Company: New Blood Interactive
-            ID: 14, Amid Evil, Price: 19.50, Review Score: 8.0, Release Date: 2019-07-20, Developer Name: David Szymanski, Developer Company: New Blood Interactive
-            ID: 15, Ultrakill, Price: 24.50, Review Score: 10.0, Release Date: 2020-09-03, Developer Name: David Szymanski, Developer Company: New Blood Interactive
+            ID: 1, Title: Wolfenstein 3D, Price: 4.99, Review Score: 8.0, Release Date: 1991-08-04, Developer Name: John Carmack, Developer Company: Id Software
+            ID: 2, Title: Doom, Price: 4.99, Review Score: 10.0, Release Date: 1993-06-06, Developer Name: John Carmack, Developer Company: Id Software
+            ID: 3, Title: Quake, Price: 9.99, Review Score: 9.0, Release Date: 2007-09-17, Developer Name: John Carmack, Developer Company: Id Software
+            ID: 7, Title: Half-Life, Price: 4.99, Review Score: 10.0, Release Date: 1998-11-08, Developer Name: Gabe Newell, Developer Company: Valve
+            ID: 8, Title: Team Fortress, Price: 4.99, Review Score: 9.5, Release Date: 1999-04-01, Developer Name: Gabe Newell, Developer Company: Valve
+            ID: 9, Title: Portal, Price: 4.99, Review Score: 10.0, Release Date: 2007-10-10, Developer Name: Gabe Newell, Developer Company: Valve
+            ID: 13, Title: Dusk, Price: 19.50, Review Score: 9.0, Release Date: 2018-12-10, Developer Name: David Szymanski, Developer Company: New Blood Interactive
+            ID: 14, Title: Amid Evil, Price: 19.50, Review Score: 8.0, Release Date: 2019-07-20, Developer Name: David Szymanski, Developer Company: New Blood Interactive
+            ID: 15, Title: Ultrakill, Price: 24.50, Review Score: 10.0, Release Date: 2020-09-03, Developer Name: David Szymanski, Developer Company: New Blood Interactive
 
             Updating some accounts...
 
@@ -470,15 +470,15 @@ public class TestMain {
             ID: 5, Name: David Szymanski, Nickname: davidszy, Password: D4v1d!23, Account Creation: 1985-06-20, Company: Spytihněv, Is Indie? No
             
             Current videogames:
-            ID: 1, Half-Life, Price: 4.99, Review Score: 10.0, Release Date: 1998-11-08, Developer Name: Alice Johnson, Developer Company: Bungie Studios
-            ID: 2, Doom, Price: 4.99, Review Score: 10.0, Release Date: 1993-06-06, Developer Name: Alice Johnson, Developer Company: Bungie Studios
-            ID: 3, Quake, Price: 9.99, Review Score: 9.0, Release Date: 2007-09-17, Developer Name: Alice Johnson, Developer Company: Bungie Studios
-            ID: 7, Prodeus, Price: 24.99, Review Score: 7.5, Release Date: 2022-09-23, Developer Name: Gabe Newell, Developer Company: Humble Games
-            ID: 8, Team Fortress, Price: 4.99, Review Score: 9.5, Release Date: 1999-04-01, Developer Name: Gabe Newell, Developer Company: Humble Games
-            ID: 9, Portal, Price: 4.99, Review Score: 10.0, Release Date: 2007-10-10, Developer Name: Gabe Newell, Developer Company: Humble Games
-            ID: 13, HROT, Price: 19.50, Review Score: 8.5, Release Date: 2023-05-16, Developer Name: David Szymanski, Developer Company: Spytihněv
-            ID: 14, Amid Evil, Price: 19.50, Review Score: 8.0, Release Date: 2019-07-20, Developer Name: David Szymanski, Developer Company: Spytihněv
-            ID: 15, Ultrakill, Price: 24.50, Review Score: 10.0, Release Date: 2020-09-03, Developer Name: David Szymanski, Developer Company: Spytihněv
+            ID: 1, Title: Half-Life, Price: 4.99, Review Score: 10.0, Release Date: 1998-11-08, Developer Name: Alice Johnson, Developer Company: Bungie Studios
+            ID: 2, Title: Doom, Price: 4.99, Review Score: 10.0, Release Date: 1993-06-06, Developer Name: Alice Johnson, Developer Company: Bungie Studios
+            ID: 3, Title: Quake, Price: 9.99, Review Score: 9.0, Release Date: 2007-09-17, Developer Name: Alice Johnson, Developer Company: Bungie Studios
+            ID: 7, Title: Prodeus, Price: 24.99, Review Score: 7.5, Release Date: 2022-09-23, Developer Name: Gabe Newell, Developer Company: Humble Games
+            ID: 8, Title: Team Fortress, Price: 4.99, Review Score: 9.5, Release Date: 1999-04-01, Developer Name: Gabe Newell, Developer Company: Humble Games
+            ID: 9, Title: Portal, Price: 4.99, Review Score: 10.0, Release Date: 2007-10-10, Developer Name: Gabe Newell, Developer Company: Humble Games
+            ID: 13, Title: HROT, Price: 19.50, Review Score: 8.5, Release Date: 2023-05-16, Developer Name: David Szymanski, Developer Company: Spytihněv
+            ID: 14, Title: Amid Evil, Price: 19.50, Review Score: 8.0, Release Date: 2019-07-20, Developer Name: David Szymanski, Developer Company: Spytihněv
+            ID: 15, Title: Ultrakill, Price: 24.50, Review Score: 10.0, Release Date: 2020-09-03, Developer Name: David Szymanski, Developer Company: Spytihněv
             """.replace("\r\n", "\n").replace("            ","");
 
         String diff = TestStringUtils.findFirstDifference(text, expectedOutput);

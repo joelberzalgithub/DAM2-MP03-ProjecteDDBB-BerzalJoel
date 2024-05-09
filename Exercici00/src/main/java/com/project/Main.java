@@ -1,5 +1,8 @@
 package com.project;
 
+import java.util.List;
+import java.util.Map;
+
 public class Main {
     public static void main(String[] args) {
         AppData db = AppData.getInstance();
@@ -132,5 +135,184 @@ public class Main {
 
         // Close the database connection
         db.close();
+    }
+
+    public static void createTables() {
+        // Get a pointer to the DDBB singleton
+        AppData db = AppData.getInstance();
+
+        // Create the 'accounts' table
+        db.update("DROP TABLE IF EXISTS accounts");
+        db.update("CREATE TABLE IF NOT EXISTS accounts (" +
+                                "id INTEGER, " +
+                                "name TEXT, " + 
+                                "nickname TEXT, " + 
+                                "password TEXT, " +
+                                "account_creation DATE, " +
+                                "PRIMARY KEY (id))");
+
+        // Create the 'developers' table
+        db.update("DROP TABLE IF EXISTS developers");
+        db.update("CREATE TABLE IF NOT EXISTS developers (" +
+                                "id INTEGER, " +
+                                "id_account INTEGER, " + 
+                                "company TEXT, " + 
+                                "is_indie BOOLEAN, " +
+                                "PRIMARY KEY (id), " +
+                                "FOREIGN KEY (id_account) REFERENCES accounts (id))");
+
+        // Create the 'games' table
+        db.update("DROP TABLE IF EXISTS games");
+        db.update("CREATE TABLE IF NOT EXISTS games (" +
+                                "id INTEGER, " +
+                                "id_developer INTEGER, " + 
+                                "title TEXT, " + 
+                                "price REAL, " +
+                                "review_score REAL, " +
+                                "release DATE, " +
+                                "PRIMARY KEY (id), " +
+                                "FOREIGN KEY (id_developer) REFERENCES accounts (id))");
+    }
+
+    public static void addAccount(String name, String nickname, String password, String accountCreation) {
+        // Get a pointer to the DDBB singleton
+        AppData db = AppData.getInstance();
+
+        // Insert data into the 'accounts' table
+        db.update("INSERT INTO accounts (name, nickname, password, account_creation) " +
+                                "VALUES ('" + name + "', '" + nickname + "', '" + password + "', '" + accountCreation + "')");
+    }
+
+    public static void addDevelopers(int idAccount, String company, boolean isIndie) {
+        // Get a pointer to the DDBB singleton
+        AppData db = AppData.getInstance();
+
+        // Insert data into the 'developers' table
+        db.update("INSERT INTO developers (id_account, company, is_indie) " +
+                                "VALUES (" + idAccount + ", '" + company + "', " + isIndie + ")");
+    }
+
+    public static void addGame(int idDeveloper, String title, double price, double reviewScore, String release) {
+        // Get a pointer to the DDBB singleton
+        AppData db = AppData.getInstance();
+
+        // Insert data into the 'games' table
+        db.update("INSERT INTO games (id_developer, title, price, review_score, release) " +
+                                "VALUES (" + idDeveloper + ", '" + title + "', " + price + ", " + reviewScore + ", '" + release + "')");
+    }
+
+    public static void listAccounts() {
+        // Get a pointer to the DDBB singleton
+        AppData db = AppData.getInstance();
+
+        List<Map<String, Object>> rows = db.query("SELECT * FROM accounts");
+
+        // List the query rows
+        for (Map<String, Object> row : rows) {
+            System.out.println( "ID: " + row.get("id") +
+                                ", Name: " + row.get("name") +
+                                ", Nickname: " + row.get("nickname") +
+                                ", Password: " + row.get("password") +
+                                ", Account Creation: " + row.get("account_creation"));
+        }
+    }
+
+    public static void listDevelopers() {
+        // Get a pointer to the DDBB singleton
+        AppData db = AppData.getInstance();
+
+        List<Map<String, Object>> rows = db.query(  "SELECT d.id, a.name, a.nickname, a.password, a.account_creation, d.company, d.is_indie " +
+                                                    "FROM developers d " +
+                                                    "JOIN accounts a ON d.id_account = a.id");
+
+        // List the query rows
+        for (Map<String, Object> row : rows) {
+            String isIndie = "No";
+            if (row.get("is_indie").equals(true)) {
+                isIndie = "Yes";
+            }
+            System.out.println( "ID: " + row.get("id") +
+                                ", Name: " + row.get("name") +
+                                ", Nickname: " + row.get("nickname") +
+                                ", Password: " + row.get("password") +
+                                ", Account Creation: " + row.get("account_creation") +
+                                ", Company: " + row.get("company") +
+                                ", Is Indie? " + isIndie);
+        }
+    }
+
+    public static void listGames() {
+        // Get a pointer to the DDBB singleton
+        AppData db = AppData.getInstance();
+
+        List<Map<String, Object>> rows = db.query(  "SELECT g.id, g.title, g.price, g.review_score, g.release, a.name, d.company " +
+                                                    "FROM games g " +
+                                                    "JOIN developers d ON g.id_developer = d.id " +
+                                                    "JOIN accounts a ON d.id_account = a.id");
+
+        // List the query rows
+        for (Map<String, Object> row : rows) {
+            System.out.println( "ID: " + row.get("id") +
+                                ", Title: " + row.get("title") +
+                                ", Price: " + row.get("price") +
+                                ", Review Score: " + row.get("review_score") +
+                                ", Release Date: " + row.get("release_date") +
+                                ", Developer Name: " + row.get("name") +
+                                ", Developer Company: " + row.get("company"));
+        }
+    }
+
+    public static void deleteAccount(int id) {
+        // Get a pointer to the DDBB singleton
+        AppData db = AppData.getInstance();
+
+        // Delete data from the 'accounts' table
+        db.update("DELETE FROM accounts WHERE id = " + id);
+    }
+
+    public static void deleteDeveloper(int id) {
+        // Get a pointer to the DDBB singleton
+        AppData db = AppData.getInstance();
+
+        // Delete data from the 'developers' table
+        db.update("DELETE FROM developers WHERE id = " + id);
+    }
+
+    public static void deleteGame(int id) {
+        // Get a pointer to the DDBB singleton
+        AppData db = AppData.getInstance();
+
+        // Delete data from the 'games' table
+        db.update("DELETE FROM games WHERE id = " + id);
+    }
+
+    public static void updateAccount(int id, String name, String nickname, String password, String accountCreation) {
+        // Get a pointer to the DDBB singleton
+        AppData db = AppData.getInstance();
+
+        // Delete data from the 'accounts' table
+        db.update(  "UPDATE accounts " +
+                    "SET name = '" + name + "', nickname = '" + nickname + "', password = '" + password + "', account_creation = '" + accountCreation + "' " +
+                    "WHERE id = " + id);
+    }
+
+    public static void updateDeveloper(int id, int idAccount, String company, boolean isIndie) {
+        // Get a pointer to the DDBB singleton
+        AppData db = AppData.getInstance();
+
+        // Delete data from the 'accounts' table
+        db.update(  "UPDATE developers " +
+                    "SET id_account = " + idAccount + ", company = '" + company + "', is_indie = " + isIndie + " " +
+                    "WHERE id = " + id);
+    }
+
+    public static void updateGame(int id, int idDeveloper, String title, double price, double reviewScore, String release) {
+        // Get a pointer to the DDBB singleton
+        AppData db = AppData.getInstance();
+
+        // Delete data from the 'accounts' table
+        db.update(  "UPDATE games " +
+                    "SET id_developer = " + idDeveloper + ", title = '" + title + "', price = " + price + ", review_score = " + reviewScore + ", release = '" + release + "' " +
+                    "WHERE id = " + id);
     }
 }
