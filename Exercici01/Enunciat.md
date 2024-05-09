@@ -22,7 +22,7 @@ phone_number (INTEGER): número de telèfon
 customer_id (INTEGER): identificador únic
 person_id (INTEGER): clau forana que enllaça amb id de la taula People
 type (TEXT): tipus de membresia (base o prèmium)
-genre_preferencies (TEXT): gèneres de pel·lícules preferits
+genre_preferences (TEXT): gèneres de pel·lícules preferits
 starting_date (DATE): data en la qual va començar a ser membre del vídeoclub
 expiration_date (DATE): data en la qual es deixarà de ser membre en cas de deixar de pagar la subscripció
 ```
@@ -55,7 +55,13 @@ Els camps 'membership_id', 'employee_id' i 'owner_id' es relacionen amb les resp
 
 Implementa objectes per contenir la informació de cada taula de la base de dades anterior. Tingues en compte que tots els atributs són privats, i calen Getters i Setters.
 
-**Classe People:** Classe base
+**Classe SaveObjects:** Classe abstracta
+
+```class
+*Mètode:* **save()**: Guarda o actualitza un objecte a la base de dades fent ús de 'ResourceSet'.
+```
+
+**Classe People:**
 
 ```class
 *Atributs:*
@@ -73,11 +79,10 @@ Implementa objectes per contenir la informació de cada taula de la base de dade
 *Mètodes:*
 
 * **getters/setters** dels atributs.
-* **save()**: Guarda o actualitza la persona a la base de dades fent ús del singleton AppData.
 * **toString()**: Retorna una cadena de text amb la informació de la persona.
 ```
 
-**Classe Customer:** subclasse
+**Classe Customer:**
 
 ```class
 *Atributs adicionals:*
@@ -85,7 +90,7 @@ Implementa objectes per contenir la informació de cada taula de la base de dade
 * **customerId** (int): Un identificador únic per a cada client.
 * **personId** (int): La clau forana que enllaça amb l'id de la taula People.
 * **type** (String): El tipus de membresia del client (base o prèmium).
-* **genrePreferencies** (String): Els gèneres de pel·lícules preferits del client.
+* **genrePreferences** (String): Els gèneres de pel·lícules preferits del client.
 * **startingDate** (Date): La data en la qual el client va començar a ser membre del vídeoclub.
 * **expirationDate** (Date): La data en la qual el client deixarà de ser membre en cas de deixar de pagar la subscripció.
 
@@ -94,11 +99,10 @@ Implementa objectes per contenir la informació de cada taula de la base de dade
 *Mètodes:*
 
 * **getters/setters** dels atributs.
-* **save()**: Guarda o actualitza l'espècie de planta a la base de dades utilitzant AppData.
 * **toString()**: Retorna una cadena de text amb la informació del client. 
 ```
 
-**Classe Employee:** subclasse
+**Classe Employee:**
 
 ```class
 *Atributs adicionals:*
@@ -116,7 +120,6 @@ Implementa objectes per contenir la informació de cada taula de la base de dade
 *Mètodes:*
 
 * **getters/setters** dels atributs.
-* **save()**: Guarda o actualitza l'espècie de planta a la base de dades utilitzant AppData.
 * **toString()**: Retorna una cadena de text amb la informació de l'empleat. 
 ```
 
@@ -138,7 +141,6 @@ Implementa objectes per contenir la informació de cada taula de la base de dade
 *Mètodes:*
 
 * **getters/setters** dels atributs.
-* **save()**: Guarda o actualitza l'espècie animal a la base de dades utilitzant AppData.
 * **toString()**: Retorna una cadena de text amb la informació del vídeoclub. 
 ```
 
@@ -160,6 +162,9 @@ void addEmployee(int employeeId, int personId, String hiringDate, String occupat
 // Afegir un vídeoclub
 void addVideoclub(int id, int ownerId, String name, String email, int phoneNumber, double openingTime, double closingTime)
 
+// Obtenir l'id d'una persona en funció d'un nom
+void getPersonIdByName()
+
 // Obtenir l'id d'un client en funció d'un nom
 void getCustomerIdByName()
 
@@ -173,23 +178,27 @@ void getOwnerIdByName()
 void getVideoclubIdByName()
 
 // Llista a totes les persones amb format:
-// ID: 1, Name: The Gourmet Kitchen, Kind: Italian, Tables: 10, Pricing: High
+// ID: 1, Name: John Doe, Email: john@example.com, DNI: 12345678A, Age: 30, Birthdate: 1994-05-15, Phone Number: 123456789
 void listPeople()
 
 // Llista als clients amb format:
-// ID: 1, Name: The Gourmet Kitchen, Kind: Italian, Tables: 10, Pricing: High
+/*
+ID: 1, Name: John Doe, Email: john@example.com, DNI: 12345678A, Age: 30, Birthdate: 1994-05-15, Phone Number: 123456789,
+Type: base, Genre Preferences: Action, Starting Date: 2023-04-15, Expiration Date: 2023-10-15
+*/
 void listCustomers()
 
 // Llita als empleats amb format:
-// ID: 1, Name: The Gourmet Kitchen, Kind: Italian, Tables: 10, Pricing: High
+/*
+ID: 1, Name: Emily Brown, Email: emily@example.com, DNI: 34567890D, Age: 35, Birthdate: 1989-03-25, Phone Number: 234567890,
+Hiring Date: 2023-05-10, Occupation: Software Engineer, Salary: 60000.0, Schedule: 40, Available Holidays: 20
+*/
 void listEmployees()
 
-// Llita als empleats amb format:
-// ID: 1, Name: The Gourmet Kitchen, Kind: Italian, Tables: 10, Pricing: High
-void listOwners()
-
 // Llita els vídeoclubs amb format:
-// ID: 1, Name: The Gourmet Kitchen, Kind: Italian, Tables: 10, Pricing: High
+/*
+ID: 1, Owner's Name: Alex Martinez, Owner's Email: alex@example.com, Owner's DNI: 78901234G, Owner's Age: 31, Owner's Birthdate: 1993-02-18, Owner's Phone Number: 678901234, Videoclub's Name: CineMania, Videoclub's Email: info@cinemania.com, Videoclub's Phone Number: 987654321, Videoclub's Opening Time: 10.0, Videoclub's Closing Time: 23.0
+*/
 void listVideoclubs()
 ```
 
