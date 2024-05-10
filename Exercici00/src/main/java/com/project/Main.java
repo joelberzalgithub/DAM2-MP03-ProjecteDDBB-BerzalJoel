@@ -22,12 +22,12 @@ public class Main {
         addAccount("Spytihněv", "spy", "XYZ", "2020-06-16");
 
         // Add developers
-        addDevelopers(4, "Id Software", false);
-        addDevelopers(5, "Bungie Studios", false);
-        addDevelopers(6, "Valve", false);
-        addDevelopers(7, "Humble Games", true);
-        addDevelopers(8, "New Blood Interactive", true);
-        addDevelopers(9, "Spytihněv", true);
+        addDeveloper(4, "Id Software", false);
+        addDeveloper(5, "Bungie Studios", false);
+        addDeveloper(6, "Valve", false);
+        addDeveloper(7, "Humble Games", true);
+        addDeveloper(8, "New Blood Interactive", true);
+        addDeveloper(9, "Spytihněv", true);
 
         // Add videogames
         addGame(4, "Wolfenstein 3D", 4.99, 8.0, "1991-08-04");
@@ -171,7 +171,7 @@ public class Main {
                                 "review_score REAL, " +
                                 "release DATE, " +
                                 "PRIMARY KEY (id), " +
-                                "FOREIGN KEY (id_developer) REFERENCES accounts (id))");
+                                "FOREIGN KEY (id_developer) REFERENCES developers (id))");
     }
 
     public static void addAccount(String name, String nickname, String password, String accountCreation) {
@@ -183,7 +183,7 @@ public class Main {
                                 "VALUES ('" + name + "', '" + nickname + "', '" + password + "', '" + accountCreation + "')");
     }
 
-    public static void addDevelopers(int idAccount, String company, boolean isIndie) {
+    public static void addDeveloper(int idAccount, String company, boolean isIndie) {
         // Get a pointer to the DDBB singleton
         AppData db = AppData.getInstance();
 
